@@ -42,6 +42,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  margin: 20px 0;
 }
 
 main {
@@ -62,10 +63,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px 0;
 }
 
 .logo {
-  padding: 2%;
+  padding: 20px;
 }
 
 .menu_box {
@@ -100,7 +102,7 @@ main {
 
 ul li {
   list-style: none;
-  margin: 2%;
+  margin: 2px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: block;
@@ -122,8 +124,8 @@ form {
   line-height: 34.2px;
   color: #5363db;
   text-align: center;
-  border-radius: 12%;
-  margin: 3%;
+  border-radius: 12px;
+  margin: 3px;
 }
 
 h1 {
@@ -182,12 +184,20 @@ form {
 }
 
 .overlay input, select {
-  background-color: #5b6ceb;
+  background-color: #f2f2f2;
   line-height: 1.5;
   font-size: 18px;
   padding: 2%;
   width: 80%;
   margin: 10px;
+}
+
+input[type=submit] {
+  background-color: #5363db;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  margin: 22px;
 }
 
 h2 {
@@ -240,7 +250,7 @@ h2 {
   max-width: 100%;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 33%;
-  margin: 4%;
+  margin: 4px;
   flex: 1 1 33%;
 }
 
@@ -315,10 +325,10 @@ h3, cite:hover {
   position: absolute;
   top: 40%;
   left: 40%;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 25px;
   opacity: 0;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -362,7 +372,7 @@ section {
 }
 
 .con4_text {
-  margin: 2%;
+  margin: 2px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -395,7 +405,7 @@ section {
   width: 30px;
   height: 30px;
   top: 40%;
-  border-radius: 50%;
+  border-radius: 15px;
 }
 
 .slider1 .slick-prev {
@@ -425,7 +435,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3%;
+  margin: 3px;
   opacity: 1;
 }
 
@@ -509,7 +519,7 @@ section {
     text-align: center;
   }
   .second .wrapper blockquote {
-    margin: 4%;
+    margin: 4px;
   }
   .second .wrapper .block1 {
     -webkit-box-flex: 1;
@@ -552,8 +562,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3%;
-  background-color: white;
+  margin: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -562,13 +571,16 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-weight: 700;
-  border-radius: 4%;
+  border-radius: 4px;
   font-size: 29px;
   color: white;
   cursor: pointer;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  font-size: 64px;
+  margin: 20px;
+  border-radius: 25px;
 }
 
 .card {
@@ -588,11 +600,12 @@ section {
   color: #555555;
   font-size: 15px;
   font-weight: 300;
+  border-radius: 0 0 25px 25px;
   background-color: white;
 }
 
 sub {
-  font-size: 12px;
+  font-size: 32px;
 }
 
 hr {
@@ -609,8 +622,8 @@ hr {
   font-weight: 600;
   font-size: 18px;
   width: 48%;
-  border-radius: 6%;
-  padding: 3%;
+  border-radius: 6px;
+  padding: 3px;
   cursor: pointer;
 }
 
@@ -629,15 +642,9 @@ footer {
 }
 
 .foot_inf {
-  margin: 10% 10% 40% 5%;
-}
-
-.social {
-  visibility: hidden;
-}
-
-.foot_inf2 {
-  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
 }
 
 @media (max-width: 767px) {
@@ -689,9 +696,7 @@ footer {
     list-style: none;
     text-align: center;
     background-color: white;
-    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-    margin-top: 15%;
+    margin-top: 100px;
   }
   .menu_item {
     display: block;
@@ -744,11 +749,17 @@ footer {
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
+  .foot_inf2 {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .logo {
-    padding: 1%;
+    padding: 1px;
     width: 7%;
   }
   #menu_toggle {
@@ -770,6 +781,9 @@ footer {
   .txt {
     font-size: 40px;
     font-weight: 400;
+  }
+  form {
+    margin: 50px;
   }
   .secImg {
     -webkit-box-flex: 1;
@@ -824,6 +838,11 @@ footer {
     font-size: 16px;
     font-weight: 400;
   }
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
   .card span {
     font-size: 67.4px;
     line-height: 75px;
@@ -858,13 +877,16 @@ footer {
     color: red;
   }
   .foot_inf {
-    margin: 5%;
+    margin: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 58%;
+            flex: 1 1 58%;
   }
   .foot_inf2 {
     visibility: visible;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 33%;
-            flex: 1 1 33%;
+        -ms-flex: 1 1 21%;
+            flex: 1 1 21%;
   }
   h4 {
     font-size: 20px;
@@ -893,13 +915,13 @@ footer {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 33%;
-            flex: 1 1 33%;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
 }
 
@@ -914,7 +936,7 @@ footer {
 .flex_con5 {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 33%;
-  flex: 1 1 19%;
+  flex: 1 1 20%;
 }
 
 @media (min-width: 930px) {
@@ -922,5 +944,13 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
+  }
+  .wrapper_six {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
