@@ -203,7 +203,8 @@ color: #5b6ceb;
 .block1 {
   display: flex;
   flex-direction: column;
-
+  background-color: #ffffff;
+  box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.1);
 }
 
 .secImg {
@@ -432,10 +433,11 @@ z-index: 2;
     blockquote {
       margin: 4px;}
       .block1 {
-        flex: 1 1 50%;
+        flex: 1 1 33%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+margin: 10px;
 
       }
     .secImg {
